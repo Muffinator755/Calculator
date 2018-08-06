@@ -1,107 +1,27 @@
-@mixin keys-row2 {
-    position: relative;
-    right: 148px;
-}
 
-@mixin keys-row3 {
-    position: relative;
-    top: 30px;
-    right: 74px;
-}
-
-@mixin keys-row4 {
-    position: relative;
-    top: 60px;
-}
-
-@mixin keys-row5 {
-    position: relative;
-    top: 90px;
-    right: 222px;
-}
 
 .calculator {
-    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-    &__button {
-        height: 20px;
-        width: 20px;
+    height: 918px;
+    width: 100%;
 
-        &__division-key {
-            position: relative;
-            bottom: 60px;
-            left: 105px;
-        }
+    &__display {
+        height: 10%;
+        width: 25%;
+        text-align: right;
+        position: relative;
+        bottom: 10%;
+        left: 25%;
+        border: 2px solid red;
+    }
 
-        &__key-7 {
-            @include keys-row2;
-        }
-
-        &__key-8 {
-            @include keys-row2;
-        }
-
-        &__key-9 {
-            @include keys-row2;
-        }
-
-        &__multiplication-key {
-            position: relative;
-            bottom: 30px;
-            left: 47px;
-        }
-
-        &__key-4 {
-            @include keys-row3;
-        }
-
-        &__key-5 {
-            @include keys-row3;
-        }
-
-        &__key-6 {
-            @include keys-row3;
-        }
-
-        &__subtraction-key {
-            position: relative;
-            left: 24px;
-        }
-
-        &__key-1 {
-            @include keys-row4;
-        }
-
-        &__key-2 {
-            @include keys-row4;
-        }
-
-        &__key-3 {
-            @include keys-row4;
-        }
-
-        &__addition-key {
-            position: relative;
-            top: 30px;
-            left: 1px;
-        }
-
-        &__key-0 {
-            @include keys-row5;
-        }
-
-        &__key-dot {
-            @include keys-row5;
-        }
-
-        &__equals-key {
-            position: relative;
-            top: 60px;
-            right: 56px;
-        }
+    &__keypad {
+        width: 25%;
+        position: relative;
+        top: 1.5%;
+        border: 2px solid red;
     }
 }
