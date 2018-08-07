@@ -2,15 +2,25 @@
     width: 37.5px;
 }
 
+@mixin button-style {
+    background-color: orange;
+    color: white;
+    border: 1px solid orangered;
+}
+
+$font-tech: "Share Tech Mono";
+
 .calculator {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 918px;
-    width: 100%;
+    width: 1360px;
     position: relative;
     right: 80px;
+    font-family: $font-tech;
+    background-color: black;
 
     &__display {
         height: 5%;
@@ -19,106 +29,130 @@
         position: relative;
         bottom: 7.3%;
         left: 153px;
-        border: 2px solid red;
+        border: 2px solid #a212e9;
+        font-size: 30px;
+        color: white;
+        background-color: blue;
     }
 
     &__keypad {
-        height: 154px;
+        height: 144px;
         width: 153px;
         position: relative;
-        top: 3.3%;
-        border: 2px solid red;
+        top: 3.1%;
+        border: 2px solid #a212e9;
     }
 
     &__button {
         &__clear-key {
             @include button-size;
+            @include button-style;
         }
 
         &__negative-key {
             @include button-size;
+            @include button-style;
         }
 
         &__percentage-key {
             @include button-size;
+            @include button-style;
         }
 
         &__key-1 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-2 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-3 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-4 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-5 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-6 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-7 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-8 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-9 {
             @include button-size;
+            @include button-style;
         }
 
         &__key-0 {
+            @include button-style;
             width: 75px;
+            
         }
 
         &__key-dot {
             @include button-size;
+            @include button-style;
         }
 
         &__division-key {
             @include button-size;
+            @include button-style;
             position: relative;
-            bottom: 150px;
+            bottom: 140px;
             left: 112.5px;
         }
 
         &__multiplication-key {
             @include button-size;
+            @include button-style;
             position: relative;
+            bottom: 112px;
             left: 75px;
-            bottom: 120px;
+            
         }
 
         &__subtraction-key {
             @include button-size;
+            @include button-style;
             position: relative;
-            bottom: 90px;
+            bottom: 84px;
             left: 37.5px
         }
 
         &__addition-key {
             @include button-size;
+            @include button-style;
             position: relative;
-            bottom: 90px;
+            bottom: 84px;
             left: 112.5px;
         }
 
         &__equals-key {
             @include button-size;
+            @include button-style;
             position: relative;
-            bottom: 60px;
+            bottom: 56px;
             left: 75px;
         }
     }
