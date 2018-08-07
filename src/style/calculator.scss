@@ -60,34 +60,12 @@ $font-tech: "Share Tech Mono";
             @include button-style;
         }
 
-        &__key-1 {
+        &__division-key {
             @include button-size;
             @include button-style;
-        }
-
-        &__key-2 {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__key-3 {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__key-4 {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__key-5 {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__key-6 {
-            @include button-size;
-            @include button-style;
+            position: relative;
+            bottom: 140px;
+            left: 112.5px;
         }
 
         &__key-7 {
@@ -105,32 +83,27 @@ $font-tech: "Share Tech Mono";
             @include button-style;
         }
 
-        &__key-0 {
-            @include button-style;
-            width: 75px;
-            
-        }
-
-        &__key-dot {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__division-key {
-            @include button-size;
-            @include button-style;
-            position: relative;
-            bottom: 140px;
-            left: 112.5px;
-        }
-
         &__multiplication-key {
             @include button-size;
             @include button-style;
             position: relative;
             bottom: 112px;
             left: 75px;
-            
+        }
+
+        &__key-4 {
+            @include button-size;
+            @include button-style;
+        }
+
+        &__key-5 {
+            @include button-size;
+            @include button-style;
+        }
+
+        &__key-6 {
+            @include button-size;
+            @include button-style;
         }
 
         &__subtraction-key {
@@ -141,12 +114,38 @@ $font-tech: "Share Tech Mono";
             left: 37.5px
         }
 
+        &__key-1 {
+            @include button-size;
+            @include button-style;
+        }
+
+        &__key-2 {
+            @include button-size;
+            @include button-style;
+        }
+
+        &__key-3 {
+            @include button-size;
+            @include button-style;
+        }
+
         &__addition-key {
             @include button-size;
             @include button-style;
             position: relative;
             bottom: 84px;
             left: 112.5px;
+            
+        }
+
+        &__key-0 {
+            @include button-style;
+            width: 75px;
+        }
+
+        &__key-dot {
+            @include button-size;
+            @include button-style;
         }
 
         &__equals-key {
