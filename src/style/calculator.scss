@@ -1,27 +1,5 @@
 @mixin button-size {
-    width: 25%;
-}
-
-@mixin button-row2 {
-    position: relative;
-    bottom: 30px;
-    right: 73px;
-}
-
-@mixin button-row3 {
-    position: relative;
-    left: 37px;
-}
-
-@mixin button-row4 {
-    position: relative;
-    top: 60px;
-}
-
-@mixin button-row5 {
-    position: relative;
-    top: 30px;
-    right: 36px;
+    width: 37.5px;
 }
 
 .calculator {
@@ -31,22 +9,25 @@
     align-items: center;
     height: 918px;
     width: 100%;
+    position: relative;
+    right: 80px;
 
     &__display {
-        height: 10%;
-        width: 25%;
+        height: 5%;
+        width: 153px;
         text-align: right;
         position: relative;
-        bottom: 10%;
-        left: 25%;
-        border: 2px solid transparent;
+        bottom: 7.3%;
+        left: 153px;
+        border: 2px solid red;
     }
 
     &__keypad {
-        width: 25%;
+        height: 154px;
+        width: 153px;
         position: relative;
-        top: 5%;
-        border: 2px solid transparent;
+        top: 3.3%;
+        border: 2px solid red;
     }
 
     &__button {
@@ -57,102 +38,88 @@
         &__negative-key {
             @include button-size;
         }
-        
+
         &__percentage-key {
             @include button-size;
         }
 
         &__key-1 {
             @include button-size;
-            @include button-row4;
         }
 
         &__key-2 {
             @include button-size;
-            @include button-row4;
         }
 
         &__key-3 {
             @include button-size;
-            @include button-row4;
         }
 
         &__key-4 {
             @include button-size;
-            position: relative;
-            top: 30px;
-            right: 110px;
         }
 
         &__key-5 {
             @include button-size;
-            @include button-row3;
         }
 
         &__key-6 {
             @include button-size;
-            @include button-row3;
         }
 
         &__key-7 {
             @include button-size;
-            @include button-row2;
         }
 
         &__key-8 {
             @include button-size;
-            @include button-row2;
         }
 
         &__key-9 {
             @include button-size;
-            position: relative;
-            bottom: 60px;
-            left: 74px;
         }
 
         &__key-0 {
-            width: 50%;
-            @include button-row5;
+            width: 75px;
         }
 
         &__key-dot {
             @include button-size;
-            @include button-row5;
         }
 
         &__division-key {
             @include button-size;
             position: relative;
-            bottom: 120px;
-            left: 110px;
+            bottom: 150px;
+            left: 112.5px;
         }
 
         &__multiplication-key {
             @include button-size;
             position: relative;
-            bottom: 90px;
-            left: 74px;
+            left: 75px;
+            bottom: 120px;
         }
 
         &__subtraction-key {
             @include button-size;
             position: relative;
-            bottom: 60px;
-            left: 37px;
+            bottom: 90px;
+            left: 37.5px
         }
 
         &__addition-key {
             @include button-size;
             position: relative;
-            bottom: 30px;
+            bottom: 90px;
+            left: 112.5px;
         }
 
         &__equals-key {
             @include button-size;
             position: relative;
-            left: 111px;
-            bottom: 30px;
+            bottom: 60px;
+            left: 75px;
         }
     }
 }
