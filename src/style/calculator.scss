@@ -2,6 +2,12 @@
     width: 37.5px;
 }
 
+@mixin operation-button-position {
+    position: relative;
+    bottom: 28px;
+    left: 113px;
+}
+
 @mixin button-style {
     background-color: orange;
     color: white;
@@ -44,28 +50,36 @@ $font-tech: "Share Tech Mono";
         border: 2px solid #a212e9;
     }
 
+    &__row-two {
+        position: relative;
+        bottom: 28px;
+    }
+
+    &__row-three {
+        position: relative;
+        bottom: 56px; 
+    }
+
+    &__row-four {
+        position: relative;
+        bottom: 84px;
+    }
+
+    &__row-five {
+         position: relative;
+         bottom: 112px;
+    }
+
     &__button {
         &__clear-key {
-            @include button-size;
             @include button-style;
-        }
-
-        &__negative-key {
-            @include button-size;
-            @include button-style;
-        }
-
-        &__percentage-key {
-            @include button-size;
-            @include button-style;
+            width: 112.5px;
         }
 
         &__division-key {
             @include button-size;
             @include button-style;
-            position: relative;
-            bottom: 140px;
-            left: 112.5px;
+            @include operation-button-position;
         }
 
         &__key-7 {
@@ -86,9 +100,7 @@ $font-tech: "Share Tech Mono";
         &__multiplication-key {
             @include button-size;
             @include button-style;
-            position: relative;
-            bottom: 112px;
-            left: 75px;
+            @include operation-button-position;
         }
 
         &__key-4 {
@@ -109,9 +121,7 @@ $font-tech: "Share Tech Mono";
         &__subtraction-key {
             @include button-size;
             @include button-style;
-            position: relative;
-            bottom: 84px;
-            left: 37.5px
+            @include operation-button-position;
         }
 
         &__key-1 {
@@ -131,10 +141,8 @@ $font-tech: "Share Tech Mono";
 
         &__addition-key {
             @include button-size;
-            @include button-style;
-            position: relative;
-            bottom: 84px;
-            left: 112.5px;
+            @include button-style;;
+            @include operation-button-position;
             
         }
 
@@ -151,9 +159,7 @@ $font-tech: "Share Tech Mono";
         &__equals-key {
             @include button-size;
             @include button-style;
-            position: relative;
-            bottom: 56px;
-            left: 75px;
+            @include operation-button-position;
         }
     }
 }
