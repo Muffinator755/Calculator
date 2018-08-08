@@ -13,6 +13,17 @@
     color: white;
     border: 1px solid orangered;
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+@mixin button-style-hover {
+    background-color: orangered;
+    border: 1px solid orange;
+}
+
+@mixin button-click {
+    background-color: orangered;
+    transform: translateY(2px);
 }
 
 $font-tech: "Share Tech Mono";
@@ -48,6 +59,7 @@ $font-tech: "Share Tech Mono";
         position: relative;
         top: 3.1%;
         border: 2px solid #a212e9;
+        background-color: orange;
     }
 
     &__row-two {
@@ -155,6 +167,130 @@ $font-tech: "Share Tech Mono";
             @include button-size;
             @include button-style;
             @include operation-button-position;
+        }
+
+        &__clear-key:hover {
+            @include button-style-hover;
+        }
+
+        &__division-key:hover {
+            @include button-style-hover;
+        }
+
+        &__key-7:hover {
+            @include button-style-hover;
+        }
+
+        &__key-8:hover {
+            @include button-style-hover;
+        }
+
+        &__key-9:hover {
+            @include button-style-hover;
+        }
+
+        &__multiplication-key:hover {
+            @include button-style-hover;
+        }
+
+        &__key-4:hover {
+            @include button-style-hover;
+        }
+
+        &__key-5:hover {
+            @include button-style-hover;
+        }
+
+        &__key-6:hover {
+            @include button-style-hover;
+        }
+
+        &__subtraction-key:hover {
+            @include button-style-hover;
+        }
+
+        &__key-1:hover {
+            @include button-style-hover;
+        }
+
+        &__key-2:hover {
+            @include button-style-hover;
+        }
+
+        &__key-3:hover {
+            @include button-style-hover;
+        }
+
+        &__addition-key:hover {
+            @include button-style-hover;
+        }
+
+        &__key-0:hover {
+            @include button-style-hover;
+        }
+
+        &__equals-key:hover {
+            @include button-style-hover;
+        }
+
+        &__clear-key:active {
+           @include button-click; 
+        }
+
+        &__division-key:active {
+            @include button-click;
+        }
+
+        &__key-7:active {
+            @include button-click;
+        }
+
+        &__key-8:active {
+            @include button-click;
+        }
+
+        &__key-9:active {
+            @include button-click;
+        }
+
+        &__multiplication-key:active {
+            @include button-click
+        }
+
+        &__key-4:active {
+            @include button-click;
+        }
+
+        &__key-5:active {
+            @include button-click
+        }
+
+        &__key-6:active {
+            @include button-click
+        }
+
+        &__subtraction-key:active {
+            @include button-click
+        }
+
+        &__key-1:active {
+            @include button-click
+        }
+
+        &__key-2:active {
+            @include button-click
+        }
+
+        &__key-3:active {
+            @include button-click
+        }
+
+        &__key-0:active {
+            @include button-click
+        }
+
+        &__equals-key:active {
+            @include button-click
         }
     }
 }
