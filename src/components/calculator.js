@@ -122,7 +122,6 @@ class Calculator extends Component {
             </div>
             <div className="calculator__row-five">
               <button className="calculator__button__key-0" onClick={() => this.inputDigit(0)} label="0" value="0">0</button>
-              <button className="calculator__button__key-dot" onClick={() => this.inputDigit(".")} label="." value=".">.</button>
               <button className="calculator__button__equals-key" onClick={() => this.sum(this.state.total)} label="=" value="equal">=</button>
             </div>
           </div>

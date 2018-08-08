@@ -148,12 +148,7 @@ $font-tech: "Share Tech Mono";
 
         &__key-0 {
             @include button-style;
-            width: 75px;
-        }
-
-        &__key-dot {
-            @include button-size;
-            @include button-style;
+            width: 113px;
         }
 
         &__equals-key {
