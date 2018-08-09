@@ -12,6 +12,7 @@ class Calculator extends Component {
     this.calculate = this.calculate.bind(this);
     this.handleAction = this.handleAction.bind(this);
     this.getResult = this.getResult.bind(this);
+    this.clearInput = this.clearInput.bind(this);
 
   }
 
@@ -63,6 +64,9 @@ class Calculator extends Component {
       current: this.calculate(this.state.operator, this.state.current)
     });
   }
+  clearInput() {
+    this.setState({current: 0});
+  }
   
   render() {
     return (
@@ -73,7 +77,7 @@ class Calculator extends Component {
         <div className="calculator__keypad">
           <div className="calculator__keys">
             <div className="caculator__row-one">
-              <button className="calculator__button__clear-key" label="C" value="clear">CLEAR</button>
+              <button className="calculator__button__clear-key" label="C" onClick={this.clearInput} value="clear">CLEAR</button>
               <button className="calculator__button__division-key" label="/" onClick={this.handleAction} value="divide">/</button>
             </div>
             <div className="calculator__row-two">
