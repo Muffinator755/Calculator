@@ -53,6 +53,11 @@ $font-tech: "Share Tech Mono";
         background-color: blue;
     }
 
+    p {
+        overflow: hidden;
+        max-width: 150px;
+    }
+
     &__keypad {
         height: 144px;
         width: 153px;
